@@ -1,0 +1,110 @@
+header {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #ffffff;
+  background: silver;
+  padding: 5px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+main, footer{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+main, header, .center-text {
+  text-align: center;
+}
+
+main p {
+  font-size: 20px;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+header, .center-text {
+  display: block;
+}
+
+#backdrop {
+  background-color: #bbbbbb;
+  padding: 20px;
+}
+
+/*added margin for spacing between image and main container*/
+img {
+  width: 100%;
+}
+
+#bordered {
+  display: block;
+  border: 3px solid rgba(14, 2, 2, 0.925);
+  font-size: 20px;
+  padding: 100px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+
+
+/*buttons for contact me links*/
+.btn {
+  display: inline-block;
+  border: 10px solid rgba(14, 2, 2, 0.925);
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ffffff;
+  border-color: #c2bfbf;
+  border-width: 1px;
+}
+
+
+/*when hovering over contact me links, buttons turn yellow*/
+.btn:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+.list-inside li {
+  list-style-position: inside;
+}
+
+/*flex aspects*/
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
